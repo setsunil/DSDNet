@@ -46,8 +46,8 @@ python src/test.py -opt src/options/test/full_table3.yml
 Citation
 ----------
 ```BibTex
- @article{kuo2021learning,
-  author    = {Pin{-}Hung Kuo and Jinshan Pan and Shao{-}Yi Chien and Ming{-}Hsuan Yang},
+ @article{kuo2021dsdnet,
+  author    = {Pin-Hung Kuo and Jinshan Pan and Shao-Yi Chien and Ming-Hsuan Yang},
   title     = {Learning Discriminative Shrinkage Deep Networks for Image Deconvolution},
   url       = {https://arxiv.org/abs/2111.13876},
   eprinttype = {arXiv},
