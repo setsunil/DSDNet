@@ -1,7 +1,6 @@
 *.png
 *.pyc
 *.pth
-results/
-Datasets/
-.vscode/
 *.tar.gz
+results/
+.vscode/
