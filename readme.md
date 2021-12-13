@@ -25,6 +25,7 @@ Models
 Dependencies and Installation
 ----------
 Python >= 3.8
+
 [PyTorch >= 1.1](https://pytorch.org)
 ```
 pip install -r requirement.txt
