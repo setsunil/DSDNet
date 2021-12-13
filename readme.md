@@ -47,7 +47,7 @@ Citation
 ----------
 ```BibTex
  @article{kuo2021dsdnet,
-  author    = {Pin-Hung Kuo and Jinshan Pan and Shao-Yi Chien and Ming-Hsuan Yang},
+  author    = {Kuo, Pin-Hung and Pan, Jinshan and Chien, Shao-Yi and Yang, Ming-Hsuan},
   title     = {Learning Discriminative Shrinkage Deep Networks for Image Deconvolution},
   url       = {https://arxiv.org/abs/2111.13876},
   eprinttype = {arXiv},
