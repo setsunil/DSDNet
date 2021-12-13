@@ -1,0 +1,6 @@
+#pytorch>=1.8.1 Please install according to your environment
+numpy
+opencv-python
+pyyaml
+future
+scipy

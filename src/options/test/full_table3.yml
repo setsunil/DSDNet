@@ -1,0 +1,32 @@
+name: DSDNet_result_table3_full
+suffix: ~  # add suffix to saved images
+model: db
+distortion: sr
+scale: 1
+crop_border: ~  # crop border when evaluation. If None(~), crop the scale pixels
+gpu_ids: [1]
+
+datasets:
+
+datasets:
+  test_0:  # the 1st test dataset
+    name: Jason
+    mode: LQGTDB
+    dataroot_GT: Datasets/Lai/GT
+    dataroot_LQ: Datasets/Lai/BL
+    dataroot_KM: Datasets/Lai/Kernel
+
+network_G:
+  which_model_G: DSDNet
+  in_nc: 3
+  out_nc: 3
+  nf_p: 49
+  nf_d: 49
+  max_nc: 4
+  nb: 4
+  upscale: 1
+  pm: replicate  #padding_mode: circular/replicate
+  dp: 0
+#### path
+path:
+  pretrain_model_G: experiemtns/pretrained/full.pth

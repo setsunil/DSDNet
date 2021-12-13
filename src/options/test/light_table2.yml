@@ -1,0 +1,86 @@
+name: DSDNet_result_table2_light
+suffix: ~  # add suffix to saved images
+model: db
+distortion: sr
+scale: 1
+crop_border: ~  # crop border when evaluation. If None(~), crop the scale pixels
+gpu_ids: [1]
+
+datasets:
+  test_0:  # the 1st test dataset
+    name: CBSD_n01
+    mode: LQGTDB
+    dataroot_GT: Datasets/CBSD100/Noise_01/GT
+    dataroot_LQ: Datasets/CBSD100/Noise_01/BL
+    dataroot_KM: Datasets/CBSD100/Noise_01/Kernel
+
+  test_1:  # the 1st test dataset
+    name: CBSD_n03
+    mode: LQGTDB
+    dataroot_GT: Datasets/CBSD100/Noise_03/GT
+    dataroot_LQ: Datasets/CBSD100/Noise_03/BL
+    dataroot_KM: Datasets/CBSD100/Noise_03/Kernel
+
+  test_2:  # the 1st test dataset
+    name: CBSD_n05
+    mode: LQGTDB
+    dataroot_GT: Datasets/CBSD100/Noise_05/GT
+    dataroot_LQ: Datasets/CBSD100/Noise_05/BL
+    dataroot_KM: Datasets/CBSD100/Noise_05/Kernel
+
+  test_3:  # the 1st test dataset
+    name: Levin_n01
+    mode: LQGTDB
+    dataroot_GT: Datasets/Levin/GT
+    dataroot_LQ: Datasets/Levin/Noise_01
+    dataroot_KM: Datasets/Levin/Kernel
+
+  test_4:  # the 1st test dataset
+    name: Levin_n03
+    mode: LQGTDB
+    dataroot_GT: Datasets/Levin/GT
+    dataroot_LQ: Datasets/Levin/Noise_03
+    dataroot_KM: Datasets/Levin/Kernel
+
+  test_5:  # the 1st test dataset
+    name: Levin_n05
+    mode: LQGTDB
+    dataroot_GT: Datasets/Levin/GT
+    dataroot_LQ: Datasets/Levin/Noise_05
+    dataroot_KM: Datasets/Levin/Kernel
+
+  test_6:  # the 1st test dataset
+    name: Set5_n01
+    mode: LQGTDB
+    dataroot_GT: Datasets/Set5/GT
+    dataroot_LQ: Datasets/Set5/Noise_01
+    dataroot_KM: Datasets/Set5/Kernel
+
+  test_7:  # the 1st test dataset
+    name: Set5_n03
+    mode: LQGTDB
+    dataroot_GT: Datasets/Set5/GT
+    dataroot_LQ: Datasets/Set5/Noise_03
+    dataroot_KM: Datasets/Set5/Kernel
+
+  test_8:  # the 1st test dataset
+    name: Set5_n05
+    mode: LQGTDB
+    dataroot_GT: Datasets/Set5/GT
+    dataroot_LQ: Datasets/Set5/Noise_05
+    dataroot_KM: Datasets/Set5/Kernel
+
+network_G:
+  which_model_G: DSDNet
+  in_nc: 3
+  out_nc: 3
+  nf_p: 24
+  nf_d: 24
+  max_nc: 4
+  nb: 3
+  upscale: 1
+  pm: replicate  #padding_mode: circular/replicate
+  dp: 0
+#### path
+path:
+  pretrain_model_G: experiemtns/pretrained/light.pth
