@@ -30,7 +30,7 @@ Dependencies and Installation
 pip install -r requirement.txt
 ```
 
-Reproduce the results in the paper
+Reproduce the Results
 ----------
 ```
 python src/test.py -opt src/options/test/full_table2.yml
