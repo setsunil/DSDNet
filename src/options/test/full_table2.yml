@@ -83,4 +83,4 @@ network_G:
   dp: 0
 #### path
 path:
-  pretrain_model_G: experiemtns/pretrained/full.pth
+  pretrain_model_G: Models/full.pth
