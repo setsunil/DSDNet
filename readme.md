@@ -33,14 +33,9 @@ pip install -r requirements.txt
 Reproduce the Results
 ----------
 ```
-python src/test.py -opt src/options/test/full_table2.yml
+sh run_scripts.sh
 ```
-```
-python src/test.py -opt src/options/test/light_table2.yml
-```
-```
-python src/test.py -opt src/options/test/full_table3.yml
-```
+
 
 
 Citation
