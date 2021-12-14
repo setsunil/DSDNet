@@ -2,7 +2,7 @@ import torch
 import models.archs.SRResNet_arch as SRResNet_arch
 import models.archs.discriminator_vgg_arch as SRGAN_arch
 import models.archs.RRDBNet_arch as RRDBNet_arch
-import models.archs.ADDNN_arch as ADDNN_arch
+import models.archs.DSDNet_arch as DSDNet_arch
 
 # Generator
 def define_G(opt):
@@ -17,7 +17,7 @@ def define_G(opt):
         netG = RRDBNet_arch.RRDBNet(in_nc=opt_net['in_nc'], out_nc=opt_net['out_nc'],
                                     nf=opt_net['nf'], nb=opt_net['nb'])
     elif which_model == 'DSDNet':
-        netG = ADDNN_arch.ADDNN(in_nc=opt_net['in_nc'], out_nc=opt_net['out_nc'],
+        netG = DSDNet_arch.DSDNet(in_nc=opt_net['in_nc'], out_nc=opt_net['out_nc'],
                                     nf_p=opt_net['nf_p'], nf_d=opt_net['nf_d'],
                                     n_iter=opt_net['nb'], max_nc=opt_net['max_nc'], padding_mode=opt_net['pm'], drop_p=opt_net['dp'], upscale=opt_net['scale'])
 

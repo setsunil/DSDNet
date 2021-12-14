@@ -106,7 +106,7 @@ class ADDNNModel(BaseModel):
         self.fake_H = self.netG(self.var_L, self.kernel, self.mask)
         l_pix = self.l_pix_w * self.cri_pix(self.fake_H, self.real_H) #one-layer loss
         if self.SS:
-            self.fake_L = networks.ADDNN_arch.bconv(self.fake_H,self.kernel,'replicate')
+            self.fake_L = networks.DSDNet_arch.bconv(self.fake_H,self.kernel,'replicate')
             self.fake_L = self.fake_L.mul(self.mask)#one-layer loss
             if hasattr(self,'noise'):
                 self.fake_L += self.noise#one-layer loss
