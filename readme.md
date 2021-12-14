@@ -22,7 +22,7 @@ Models
 [Google Drive](https://drive.google.com/file/d/1FHynxgJSXtTCQQVVSMcafwesNekSRrcG/view?usp=sharing)
 
 
-Dependencies and Installation
+Dependencies
 ----------
 - Python >= 3.8  
 - [PyTorch >= 1.8.1](https://pytorch.org)
