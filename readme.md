@@ -1,4 +1,4 @@
-# Discriminative Shrinkage Deep Network
+# Learning Discriminative Shrinkage Deep Networks for Image Deconvolution
 
 
 
