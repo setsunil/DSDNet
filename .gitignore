@@ -1,6 +1,6 @@
-*.png
 *.pyc
 *.pth
 *.tar.gz
 results/
 .vscode/
+Datasets/
