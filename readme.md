@@ -1,4 +1,4 @@
-# Learning Discriminative Shrinkage Deep Networks for Image Deconvolution, ECCV 2022
+# [ECCV 2022] Learning Discriminative Shrinkage Deep Networks for Image Deconvolution
 
 
 
