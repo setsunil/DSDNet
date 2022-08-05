@@ -53,8 +53,8 @@ Citation
   author    = {Kuo, Pin-Hung and Pan, Jinshan and Chien, Shao-Yi and Yang, Ming-Hsuan},
   title     = {Learning Discriminative Shrinkage Deep Networks for Image Deconvolution},
   url       = {https://arxiv.org/abs/2111.13876},
-  eprinttype = {arXiv},
-  eprint    = {2111.13876},
+  booktitle = {European Conference on Computer Vision (ECCV)},
+  year      = {2022}
 }
 ```
 
