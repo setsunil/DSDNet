@@ -31,7 +31,7 @@ The official pytorch implementation of the paper
 ### Installation
 This implementation based on [BasicSR](https://github.com/xinntao/BasicSR) which is a open source toolbox for image/video restoration tasks and [NAFNet](https://github.com/megvii-research/NAFNet)
 
-```python
+```
 python 3.8.20
 pytorch 1.13.1
 cuda 11.7
