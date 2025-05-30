@@ -1,0 +1,196 @@
+# ------------------------------------------------------------------------
+# Copyright (c) 2022 megvii-model. All Rights Reserved.
+# ------------------------------------------------------------------------
+# Modified from BasicSR (https://github.com/xinntao/BasicSR)
+# Copyright 2018-2020 BasicSR Authors
+# ------------------------------------------------------------------------
+# general settings
+name: DSD_light
+model_type: DSD
+scale: 1
+num_gpu: 1 # set num_gpu: 0 for cpu mode
+manual_seed: 10
+
+# dataset and data loader settings
+datasets:
+  test_01:
+    name: Levin_n1
+    type: NonBlindDeblurringDataset
+    dataroot_gt: Datasets/test/Levin/GT
+    dataroot_lq: Datasets/test/Levin/BL/Noise_01
+    dataroot_kl: Datasets/test/Levin/Kernel
+    io_backend:
+      type: disk
+
+  test_02:
+    name: Levin_n3
+    type: NonBlindDeblurringDataset
+    dataroot_gt: Datasets/test/Levin/GT
+    dataroot_lq: Datasets/test/Levin/BL/Noise_03
+    dataroot_kl: Datasets/test/Levin/Kernel
+    io_backend:
+      type: disk
+
+  test_03:
+    name: Levin_n5
+    type: NonBlindDeblurringDataset
+    dataroot_gt: Datasets/test/Levin/GT
+    dataroot_lq: Datasets/test/Levin/BL/Noise_05
+    dataroot_kl: Datasets/test/Levin/Kernel
+    io_backend:
+      type: disk
+
+  test_04:
+    name: CSBD_n1
+    type: NonBlindDeblurringDataset
+    dataroot_gt: Datasets/test/CBSD100/Noise_01/GT
+    dataroot_lq: Datasets/test/CBSD100/Noise_01/BL
+    dataroot_kl: Datasets/test/CBSD100/Noise_01/Kernel
+    io_backend:
+      type: disk
+
+  test_05:
+    name: CSBD_n3
+    type: NonBlindDeblurringDataset
+    dataroot_gt: Datasets/test/CBSD100/Noise_03/GT
+    dataroot_lq: Datasets/test/CBSD100/Noise_03/BL
+    dataroot_kl: Datasets/test/CBSD100/Noise_03/Kernel
+    io_backend:
+      type: disk
+
+  test_06:
+    name: CSBD_n5
+    type: NonBlindDeblurringDataset
+    dataroot_gt: Datasets/test/CBSD100/Noise_05/GT
+    dataroot_lq: Datasets/test/CBSD100/Noise_05/BL
+    dataroot_kl: Datasets/test/CBSD100/Noise_05/Kernel
+    io_backend:
+      type: disk
+
+  test_07:
+    name: Set5_n1
+    type: NonBlindDeblurringDataset
+    dataroot_gt: Datasets/test/Set5/GT
+    dataroot_lq: Datasets/test/Set5/BL/Noise_01
+    dataroot_kl: Datasets/test/Set5/Kernel
+    io_backend:
+      type: disk
+
+  test_08:
+    name: Set5_n3
+    type: NonBlindDeblurringDataset
+    dataroot_gt: Datasets/test/Set5/GT
+    dataroot_lq: Datasets/test/Set5/BL/Noise_03
+    dataroot_kl: Datasets/test/Set5/Kernel
+    io_backend:
+      type: disk
+
+  test_09:
+    name: Set5_n5
+    type: NonBlindDeblurringDataset
+    dataroot_gt: Datasets/test/Set5/GT
+    dataroot_lq: Datasets/test/Set5/BL/Noise_05
+    dataroot_kl: Datasets/test/Set5/Kernel
+    io_backend:
+      type: disk
+
+  test_10:
+    name: Set14_n01
+    type: NonBlindDeblurringDataset
+    dataroot_gt: Datasets/test/Set14/GTImage/
+    dataroot_lq: Datasets/test/Set14/BLImage/n01/
+    dataroot_kl: Datasets/test/Set14/KLImage/
+    io_backend:
+      type: disk
+
+  test_11:
+    name: Set14_n03
+    type: NonBlindDeblurringDataset
+    dataroot_gt: Datasets/test/Set14/GTImage/
+    dataroot_lq: Datasets/test/Set14/BLImage/n03/
+    dataroot_kl: Datasets/test/Set14/KLImage/
+    io_backend:
+      type: disk
+
+  test_12:
+    name: Set14_n05
+    type: NonBlindDeblurringDataset
+    dataroot_gt: Datasets/test/Set14/GTImage/
+    dataroot_lq: Datasets/test/Set14/BLImage/n05/
+    dataroot_kl: Datasets/test/Set14/KLImage/
+    io_backend:
+      type: disk
+
+  test_13:
+    name: Sun_n1
+    type: NonBlindDeblurringDataset
+    dataroot_gt: Datasets/test/Sun/GTImage/
+    dataroot_lq: Datasets/test/Sun/BLImage/n01/
+    dataroot_kl: Datasets/test/Sun/KLImage/
+    io_backend:
+      type: disk
+
+  test_14:
+    name: Sun_n3
+    type: NonBlindDeblurringDataset
+    dataroot_gt: Datasets/test/Sun/GTImage/
+    dataroot_lq: Datasets/test/Sun/BLImage/n03/
+    dataroot_kl: Datasets/test/Sun/KLImage/
+    io_backend:
+      type: disk
+
+  test_15:
+    name: Sun_n5
+    type: NonBlindDeblurringDataset
+    dataroot_gt: Datasets/test/Sun/GTImage/
+    dataroot_lq: Datasets/test/Sun/BLImage/n05/
+    dataroot_kl: Datasets/test/Sun/KLImage/
+    io_backend:
+      type: disk
+
+  # test_16:
+  #   name: Jason
+  #   type: NonBlindDeblurringDataset
+  #   dataroot_gt: Datasets/test/Lai/GT/
+  #   dataroot_lq: Datasets/test/Lai/BL/
+  #   dataroot_kl: Datasets/test/Lai/Kernel/
+  #   io_backend:
+  #     type: disk
+
+# network structures
+network_g:
+  type: DSDNet
+  in_nc: 3
+  out_nc: 3
+  nf_p: 24
+  nf_d: 24
+  max_nc: 4
+  n_iter: 3
+  padding_mode: replicate  #padding_mode: circular/replicate
+  dropout_rate: 0
+
+# path
+path:
+  pretrain_network_g: models/DSD_light.pth
+  strict_load_g: true
+  resume_state: ~
+
+# validation settings
+val:
+  save_img: true
+  grids: false
+
+  metrics:
+    psnr: # metric name, can be arbitrary
+      type: calculate_psnr
+      crop_border: 0
+      test_y_channel: false
+    ssim:
+      type: calculate_ssim
+      crop_border: 0
+      test_y_channel: false
+
+# dist training settings
+dist_params:
+  backend: nccl
+  port: 29500
