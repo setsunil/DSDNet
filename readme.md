@@ -44,12 +44,12 @@ source script.sh
 ```
 
 ### Usage
-* Train:
+* Train
 ```
 python -m torch.distributed.run --nproc_per_node=8 --master_port=4321 basicsr/train.py -opt options/train/WEDBSD.yml --launcher pytorch
 ```
 
-* Test:
+* Test
 ```
 python -m torch.distributed.run --nproc_per_node=8 --master_port=4321 basicsr/test.py -opt options/test/DSDplus_p.yml --launcher pytorch
 ```
