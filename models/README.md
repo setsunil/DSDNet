@@ -1,2 +1,2 @@
 ### Models
-unzip models.zip here
+unzip DSD_models.zip here

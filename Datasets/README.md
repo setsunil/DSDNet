@@ -1,2 +1,2 @@
 ### Data Preparation
-unzip datasets.zip here
+unzip DSD_datasets.zip here
