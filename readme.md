@@ -5,7 +5,7 @@ The official pytorch implementation of the paper
 **[Learning Discriminative Shrinkage Deep Networks for Image Deconvolution (ECCV2022)](https://arxiv.org/abs/2111.13876)**
 
 <!--Pin-Hung Kuo\*, Jinshan Pan, Shao-Yi Chien, Ming-Hsuan Yang-->
-###[**Pin-Hung Kuo**](https://setsunil.github.io/), [Jinshan Pan](https://jspan.github.io/), [Shao-Yi Chien](https://www.ee.ntu.edu.tw/profile1.php?teacher_id=943013&p=3), and [Ming-Hsuan Yang](https://faculty.ucmerced.edu/mhyang/)
+#### [**Pin-Hung Kuo**](https://setsunil.github.io/), [Jinshan Pan](https://jspan.github.io/), [Shao-Yi Chien](https://www.ee.ntu.edu.tw/profile1.php?teacher_id=943013&p=3), and [Ming-Hsuan Yang](https://faculty.ucmerced.edu/mhyang/)
 <!--
 >Although there have been significant advances in the field of image restoration recently, the system complexity of the state-of-the-art (SOTA) methods is increasing as well, which may hinder the convenient analysis and comparison of methods. 
 >In this paper, we propose a simple baseline that exceeds the SOTA methods and is computationally efficient. 
