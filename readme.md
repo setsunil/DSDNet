@@ -35,6 +35,7 @@ This implementation based on [BasicSR](https://github.com/xinntao/BasicSR) which
 python 3.8.20
 pytorch 1.13.1
 cuda 11.7
+Anaconda
 ```
 
 ```
