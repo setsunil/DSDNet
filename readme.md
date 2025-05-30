@@ -29,8 +29,8 @@ The official pytorch implementation of the paper
 **2022.04.15** NAFNet based Stereo Image Super-Resolution solution ([NAFSSR](https://arxiv.org/abs/2204.08714)) won the **1st place** on the NTIRE 2022 Stereo Image Super-resolution Challenge! Training/Evaluation instructions see [here](https://github.com/megvii-research/NAFNet/blob/main/docs/StereoSR.md).
 -->
 ### Installation
-This implementation based on [BasicSR](https://github.com/xinntao/BasicSR) which is a open source toolbox for image/video restoration tasks and [NAFNet](https://github.com/megvii-research/NAFNet)
-
+This implementation based on [BasicSR](https://github.com/xinntao/BasicSR) which is a open source toolbox for image/video restoration tasks and [NAFNet](https://github.com/megvii-research/NAFNet)  
+We tested our models in the following environments; higher versions may also be compatible.
 ```
 python 3.8.20
 pytorch 1.13.1
@@ -52,7 +52,10 @@ python -m torch.distributed.run --nproc_per_node=8 --master_port=4321 basicsr/tr
 
 * Test
 ```
-python -m torch.distributed.run --nproc_per_node=8 --master_port=4321 basicsr/test.py -opt options/test/DSDplus_p.yml --launcher pytorch
+python -m torch.distributed.run --nproc_per_node=1 --master_port=4321 basicsr/test.py -opt options/test/DSDplus_p.yml --launcher pytorch
+python -m torch.distributed.run --nproc_per_node=1 --master_port=4321 basicsr/test.py -opt options/test/DSDplus_e.yml --launcher pytorch
+python -m torch.distributed.run --nproc_per_node=1 --master_port=4321 basicsr/test.py -opt options/test/DSD_full.yml --launcher pytorch
+python -m torch.distributed.run --nproc_per_node=1 --master_port=4321 basicsr/test.py -opt options/test/DSD_light.yml --launcher pytorch
 ```
 <!--
 ### Quick Start
