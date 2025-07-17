@@ -1,4 +1,22 @@
-from basicsr.models.archs.arch_util import LayerNorm2d
+'''
+@inproceedings{kuo2022learning,
+  title={Learning discriminative shrinkage deep networks for image deconvolution},
+  author={Kuo, Pin-Hung and Pan, Jinshan and Chien, Shao-Yi and Yang, Ming-Hsuan},
+  booktitle={European Conference on Computer Vision},
+  pages={217--234},
+  year={2022},
+  organization={Springer}
+}
+
+@article{kuo2025efficient,
+  title={Efficient Non-Blind Image Deblurring with Discriminative Shrinkage Deep Networks},
+  author={Kuo, Pin-Hung and Pan, Jinshan and Chien, Shao-Yi and Yang, Ming-Hsuan},
+  journal={IEEE Transactions on Circuits and Systems for Video Technology},
+  year={2025},
+  publisher={IEEE}
+}
+'''
+
 from einops import rearrange
 import numbers
 import torch
