@@ -1,6 +1,6 @@
 ## DSDNet: Discriminative Shrinkage Deep Network
 
-The official pytorch implementation of the papers
+The official pytorch implementation of the papers  
 **[Efficient Non-Blind Image Deblurring with Discriminative Shrinkage Deep Networks (TCSVT2025)](https://ieeexplore.ieee.org/document/10937503)**
 **[Learning Discriminative Shrinkage Deep Networks for Image Deconvolution (ECCV2022)](https://arxiv.org/abs/2111.13876)**
 
