@@ -121,7 +121,7 @@ python -m torch.distributed.run --nproc_per_node=1 --master_port=4321 basicsr/te
 [Google Drive](https://drive.google.com/file/d/1qNOTgEvm6Ag06YEc9b3iX2Zc9ZuIyTU1/view?usp=drive_link)
 
 ### Pretrained Models
-[Gogole Drive](https://drive.google.com/file/d/1cZZ8Y6_z76_GSsBJAw50QFWZ8Clx8uou/view?usp=drive_link)
+[Google Drive](https://drive.google.com/file/d/1cZZ8Y6_z76_GSsBJAw50QFWZ8Clx8uou/view?usp=drive_link)
 
 ### Citations
 If DSDNet helps your research or work, please consider citing us.
