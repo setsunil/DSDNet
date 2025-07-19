@@ -28,7 +28,7 @@ The official pytorch implementation of the papers
 
 **2022.04.15** NAFNet based Stereo Image Super-Resolution solution ([NAFSSR](https://arxiv.org/abs/2204.08714)) won the **1st place** on the NTIRE 2022 Stereo Image Super-resolution Challenge! Training/Evaluation instructions see [here](https://github.com/megvii-research/NAFNet/blob/main/docs/StereoSR.md).
 -->
-### Installation
+### Environments
 This implementation based on [BasicSR](https://github.com/xinntao/BasicSR) which is a open source toolbox for image/video restoration tasks and [NAFNet](https://github.com/megvii-research/NAFNet)
 We tested our models in the following environments; higher versions may also be compatible.
 ```
@@ -37,7 +37,7 @@ pytorch 1.13.1
 cuda 11.7
 Anaconda
 ```
-
+### Installation
 ```
 git clone https://github.com/setsunil/DSDNet.git
 cd DSDNet
