@@ -16,6 +16,7 @@ cuda 11.7
 Anaconda
 ```
 ### Installation
+Please install Anaconda first, then execute the following command:
 ```
 git clone https://github.com/setsunil/DSDNet.git
 cd DSDNet
