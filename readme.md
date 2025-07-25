@@ -24,12 +24,12 @@ source script.sh
 ```
 
 ### Usage
-* Train
+* Training
 ```
 python -m torch.distributed.run --nproc_per_node=8 --master_port=4321 basicsr/train.py -opt options/train/WEDBSD.yml --launcher pytorch
 ```
 
-* Test
+* Testing
 ```
 python -m torch.distributed.run --nproc_per_node=1 --master_port=4321 basicsr/test.py -opt options/test/DSDplus_p.yml --launcher pytorch
 python -m torch.distributed.run --nproc_per_node=1 --master_port=4321 basicsr/test.py -opt options/test/DSDplus_e.yml --launcher pytorch
